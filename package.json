@@ -1,0 +1,31 @@
+{
+  "name": "culpamodi",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PriceJacobs/culpamodi.git"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "@vitest/coverage-c8": "^0.24.1",
+    "eslint": "^8.25.0",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4",
+    "vitest": "^0.24.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn tsc && yarn lint && yarn prettier-format"
+    }
+  },
+  "author": "RonaldoDuBuque",
+  "homepage": "https://github.com/PriceJacobs/culpamodi.git"
+}
